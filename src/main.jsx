@@ -8,6 +8,7 @@ import {
 import "./index.css"; 
 import Root from './Root.jsx';
 import Home from './Components/Home.jsx';
+import Landingpage from './Components/Landingpage.jsx';
 const router = createBrowserRouter([ 
  { 
  path: "/", 

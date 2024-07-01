@@ -17,7 +17,25 @@ const Navbar = () => {
                 <div>
                     <ul className="flex gap-2 lg:gap-10 pb-2 md:pb-0">
                         <Link to="/" className="hover:text-zinc-300">Home</Link>
-                        <Link  to="/About" className="hover:text-[#1D24CA]">Products</Link>
+                        <Link  to="/About" className="hover:text-[#1D24CA]">
+
+                        <div className="dropdown dropdown-hover">
+                        <div tabIndex={0} role="button" className="">Products</div>
+                        <ul tabIndex={0} className="dropdown-content menu bg-base-100 z-[1] w-52 p-4 shadow text-blac flex flex-col gap-2 text-black">
+                            <Link className="hover:text-yellow-400"><a>T-Shirt</a></Link>
+                            <Link className="hover:text-yellow-400"><a>Polo-Shirt</a></Link>
+                            <Link className="hover:text-yellow-400"><a>Winter Wear</a></Link>
+                            <Link className="hover:text-yellow-400"><a>Hoodies and Sweatshirt</a></Link>
+                            <Link className="hover:text-yellow-400"><a>Denim Pant</a></Link>
+                            <Link className="hover:text-yellow-400"><a>Shorts</a></Link>
+                            <Link className="hover:text-yellow-400"><a>Trouser</a></Link>
+                            <Link className="hover:text-yellow-400"><a>Cargo</a></Link>
+                            <Link className="hover:text-yellow-400"><a>Leggins Items</a></Link>
+                            <Link className="hover:text-yellow-400"><a>Jeans</a></Link>
+                        </ul>
+                        </div>
+
+                        </Link>
                         <Link to="/Product"  className="hover:text-[#1D24CA]">Profile</Link>
                         <Link to="/Contact" className="hover:text-[#1D24CA]">Contacts</Link>
                     </ul>
