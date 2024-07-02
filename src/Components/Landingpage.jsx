@@ -13,6 +13,17 @@ import tshirt1 from '../Images/tshirt1.jpg';
 import tshirt2 from '../Images/tshirt2.jpg';
 import tshirt3 from '../Images/tshirt3.jpeg';
 import tshirt4 from '../Images/tshirt4.png';
+import tshirt from '../Images/tshirt.jpg';
+import polo from '../Images/polo.jpg';
+import winter from '../Images/winter.jpg';
+import hoodie from '../Images/hoodie.jpg';
+import denim from '../Images/denim.jpg';
+import shorts from '../Images/shorts.jpg';
+import trouser from '../Images/trouser.jpg';
+import cargo from '../Images/cargo.jpg';
+import leggins from '../Images/legging.jpg';
+import jeans from '../Images/jeans.jpg';
+import { Link } from 'react-router-dom';
 const Landingpage = () => {
     
     const [currentSlide, setCurrentSlide] = useState(1);
@@ -96,7 +107,7 @@ const Landingpage = () => {
                 <div className='text-center text-5xl font-semibold pb-20'>
                     <h1>New Release</h1>
                 </div>
-                <div className='px-24'>
+                <div className='px-5 md:px-10 lg:px-24'>
                 <Carousel
                 autoPlay
                 interval={2000}
@@ -209,6 +220,52 @@ const Landingpage = () => {
                    <button className='hover:underline'> View All</button>
                 </div>
                 </div>
+            </section>
+            {/* Catagory section */}
+            <section className='mt-24 px-5 md:px-10 lg:px-24'>
+            <div className='grid grid-cols2 md:grid-cols-3 lg:grid-cols-5 gap-8'>
+                <Link className='relative'>
+                    <img src={tshirt} alt="" />
+                    <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold  py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>T-Shirt</h1>
+                </Link>
+                <Link className='relative'>
+                    <img src={polo} alt="" />
+                    <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Polo-Shirt</h1>
+                </Link>
+                <Link className='relative'>
+                    <img src={winter} alt="" />
+                    <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Winter Wear</h1>
+                </Link>
+                <Link className='relative'>
+                    <img src={hoodie} alt="" />
+                    <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Hoodies and Sweatshirt</h1>
+                </Link>
+                <Link className='relative'>
+                    <img src={denim} alt="" />
+                    <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Denim Pants</h1>
+                </Link>
+                {/* 2nd row */}
+                <Link className='relative'>
+                    <img src={shorts} alt="" />
+                    <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Shorts</h1>
+                </Link>
+                <Link className='relative'>
+                    <img src={trouser} alt="" />
+                    <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Trouser</h1>
+                </Link>
+                <Link className='relative'>
+                    <img src={cargo} alt="" />
+                    <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Cargo</h1>
+                </Link>
+                <Link className='relative'>
+                    <img src={leggins} alt="" />
+                    <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Legging Items</h1>
+                </Link>
+                <Link className='relative'>
+                    <img src={jeans} alt="" />
+                    <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Jeans</h1>
+                </Link>
+            </div>
             </section>
         </div>
     );
