@@ -24,6 +24,7 @@ import cargo from '../Images/cargo.jpg';
 import leggins from '../Images/legging.jpg';
 import jeans from '../Images/jeans.jpg';
 import { Link } from 'react-router-dom';
+
 const Landingpage = () => {
     
     const [currentSlide, setCurrentSlide] = useState(1);

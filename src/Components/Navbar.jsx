@@ -3,6 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
 // import logo from '../Images/elegant-logo-short.png';
 import logo from '../Images/elegant-logo-removebg.png'
+import shopping from '../Images/shopping-bag.png';
 const Navbar = () => {
     return (
         <div className="w-ful">
@@ -43,8 +44,9 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            <div className="bg-black py-2 text-white font-normal text-sm md:text-base text-center">
-                <p className="tracking-wide hover:tracking-widest hover:transition duration-500">Happy Shopping</p>
+            <div className="bg-black py-3 text-white font-normal text-sm md:text-base text-center flex items-center justify-center gap-2">
+                <img src={shopping} alt="" className="w-6" />
+                <p className="tracking-wide hover:tracking-widest hover:transition duration-500 ">Happy Shopping</p>
             </div>
         </div>
     );
