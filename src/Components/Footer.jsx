@@ -77,7 +77,7 @@ const Footer = () => {
                     <p className='font-light opacity-80'>Track Order</p>
                 </div>
             </div>
-            <div className='px-24 py-4 border-t-2 border-[#00000032] flex items-center justify-between'>
+            <div className='px-10 md:px-20 lg:px-24 py-4 border-t-2 border-[#00000032] flex items-center justify-between'>
                 <img src={logo} alt="" className='w-32 bg-black px-5 py-1' />
                 <h1 className='text-base font-semibold'>@ 2024 Elegant Fashion</h1>
             </div>
