@@ -6,6 +6,7 @@ import linkedin from '../Images/linkedin.png';
 import youtube from '../Images/youtube.png';
 import logo from '../Images/elegant-logo-removebg.png'
 import {ToastContainer , toast } from 'react-toastify';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     const form = useRef();
@@ -32,7 +33,7 @@ const Footer = () => {
     };
     return (
         <div className="mt-28">
-            <div className="px-24 py-14 border-t-2 border-black w-full flex flex-wrap justify-start items-start gap-10 lg:gap-20">
+            <div className="px-10 md:px-20 lg:px-24 py-14 border-t-2 border-black w-full flex flex-wrap justify-start items-start gap-10 lg:gap-20">
                 {/* column 1 */}
                 <div className='flex flex-col gap-4 justify-start'>
                     <h1 className="text-2xl font-medium">EXPLORE OUR POPULAR CATEGORIES</h1>
@@ -62,7 +63,7 @@ const Footer = () => {
                 </div>
                 <div className='text-sm flex flex-col gap-2 '>
                     <h1 className='font-medium'>INFORMATION</h1>
-                    <p className='font-light opacity-80'>About Us</p>
+                    <Link to="/About" className='font-light opacity-80'>About Us</Link>
                     <p className='font-light opacity-80'>Terms and Conditions</p>
                     <p className='font-light opacity-80'>Shipping and Return</p>
                     <p className='font-light opacity-80'>Privacy Policy</p>
@@ -70,7 +71,7 @@ const Footer = () => {
                 </div>
                 <div className='text-sm flex flex-col gap-2'>
                     <h1 className='font-medium'>CUSTOMER SERVICE</h1>
-                    <p className='font-light opacity-80'>Contact Us</p>
+                    <Link to="/Contact" className='font-light opacity-80'>Contact Us</Link>
                     <p className='font-light opacity-80'>Return, Refund & Exchange</p>
                     <p className='font-light opacity-80'>Site Map</p>
                     <p className='font-light opacity-80'>Track Order</p>

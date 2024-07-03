@@ -123,7 +123,7 @@ const Landingpage = () => {
             <div className='text-center text-5xl font-semibold pb-20'>
                 <h1>Product Process</h1>
             </div>
-            <div className='grid grid-cols-6 md:grid-cols-10 lg:grid-cols-12 items-center gap-5'>
+            <div className='grid grid-cols-4 md:grid-cols-10 lg:grid-cols-12 items-center gap-5'>
                 <div className='flex flex-col gap-5 items-center justify-center'>
                     <img src={order} alt="" />
                     <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>1</span>Order</p>

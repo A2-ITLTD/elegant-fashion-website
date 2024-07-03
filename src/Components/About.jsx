@@ -2,6 +2,9 @@ import shirt from '../Images/formalshirt.jpg';
 import cloth from '../Images/cloth.jpg';
 import jeans from '../Images/jeans2.jpg';
 import womenshirt from '../Images/womenshirt.jpg';
+import polo from '../Images/polo.jpg';
+import winter from '../Images/winter.jpg';
+import hoodie from '../Images/hoodie.jpg';
 const About = () => {
     return (
         <div className='mt-24 px-5 md:px-14 lg:px-52 flex flex-col-reverse md:flex-row gap-20'>
@@ -10,6 +13,9 @@ const About = () => {
                 <img src={cloth} alt="" />
                 <img src={jeans} alt="" />
                 <img src={womenshirt} alt="" />
+                <img src={polo} alt="" />
+                <img src={winter} alt="" />
+                <img src={hoodie} alt="" />
             </div>
             <div className="w-full md:w-4/5 text-left flex flex-col gap-5"> 
                 <h1 className='text-3xl font-bold text-yellow-700'>About Us</h1>
@@ -30,8 +36,8 @@ const About = () => {
                 <p className='text-base font-medium text-black opacity-70 text-justify'>
                 We offer exceptional services to our customers, ensuring their satisfaction by creating a superior working environment through our professional expertise, knowledge, and experience. We uphold sound business principles with the utmost concern, ensuring consistency in quality, service, and the ability to handle large orders.
                 </p>
-                <h1 className='text-xl font-bold text-yellow-700'>Pricing</h1>
-                <p className='text-base font-medium text-black opacity-70 text-justify'><b>Elegant Fashion</b>offers transparent pricing for all products, optimizing the following components: fabric consumption is assessed at the factory and verified by our technical experts to prevent any miscalculations and overconsumption.</p>
+                <h1 className='text-xl font-bold text-yellow-700'>Pricing :</h1>
+                <p className='text-base font-medium text-black opacity-70 text-justify'><b>Elegant Fashion</b> offers transparent pricing for all products, optimizing the following components: fabric consumption is assessed at the factory and verified by our technical experts to prevent any miscalculations and overconsumption.</p>
                 <ul className='text-base font-medium text-black opacity-70 text-justify list-disc pl-14'>
                     <li>Fabric price is carefully evaluated from yarn, with a detailed company breakdown and current market price.</li>
                     <li>CM is determined based on style and prevailing market rates.</li>
