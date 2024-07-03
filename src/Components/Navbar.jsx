@@ -40,6 +40,7 @@ const Navbar = () => {
                         </div>
 
                         </Link>
+                        <Link to="/About" className="hover:underline">About</Link>
                         <Link to="/Product"  className="hover:underline ">Profile</Link>
                         <Link to="/Contact" className="hover:underline">Contacts</Link>
                     </ul>
