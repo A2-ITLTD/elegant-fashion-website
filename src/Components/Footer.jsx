@@ -6,7 +6,7 @@ import logo from '../Images/elegant-logo-removebg.png'
 const Footer = () => {
     return (
         <div className="mt-28">
-            <div className="px-24 py-14 border-t-2 border-black w-full flex flex-wrap justify-start items-start gap-64">
+            <div className="px-24 py-14 border-t-2 border-black w-full flex flex-wrap justify-start items-start gap-10 lg:gap-20">
                 {/* column 1 */}
                 <div className='flex flex-col gap-4 justify-start'>
                     <h1 className="text-2xl font-medium">EXPLORE OUR POPULAR CATEGORIES</h1>
@@ -31,7 +31,7 @@ const Footer = () => {
                         <img src={linkedin} alt="" className='w-10'/>
                     </div>
                 </div>
-                <div className='text-sm flex flex-col gap-2'>
+                <div className='text-sm flex flex-col gap-2 '>
                     <h1 className='font-medium'>INFORMATION</h1>
                     <p className='font-light opacity-80'>About Us</p>
                     <p className='font-light opacity-80'>Terms and Conditions</p>

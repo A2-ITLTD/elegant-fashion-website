@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="w-ful">
             {/* 1st navbar */}
             <div className="bg-black text-white font-light text-xs md:text-xs py-2  px-5 md:px-20 flex justify-center md:justify-end gap-5 md:gap-10 ">
-                <p className="flex items-center gap-1 md:gap-2 hover:text-[#acacac]"><MdEmail />info@a2itbd.com</p>
+                <p className="flex items-center gap-1 md:gap-2 hover:text-[#acacac]"><MdEmail />elegantfashion70@gmail.com</p>
                 <p className="hover:text-[#acacac]">Call or Text (+880 1846937397)</p>
             </div>
             {/* main navbar */}
@@ -25,6 +25,7 @@ const Navbar = () => {
                         <div className="dropdown dropdown-hover">
                         <div tabIndex={0} role="button" className="">Products</div>
                         <ul tabIndex={0} className="dropdown-content menu bg-base-100 z-[1] w-52 p-4 shadow text-blac flex flex-col gap-2 text-black">
+                            <Link className="hover:underline"><a>Shirt</a></Link>
                             <Link className="hover:underline"><a>T-Shirt</a></Link>
                             <Link className="hover:underline"><a>Polo-Shirt</a></Link>
                             <Link className="hover:underline"><a>Winter Wear</a></Link>

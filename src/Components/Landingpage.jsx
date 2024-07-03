@@ -23,6 +23,21 @@ import trouser from '../Images/trouser.jpg';
 import cargo from '../Images/cargo.jpg';
 import leggins from '../Images/legging.jpg';
 import jeans from '../Images/jeans.jpg';
+import shirt from '../Images/shirt.jpg';
+import order from '../Images/order.png';
+import arrow from '../Images/arrow.png';
+import fabric from '../Images/fabric.png';
+import design from '../Images/design.png';
+import price from '../Images/price.png';
+import production from '../Images/production.png';
+import camera from '../Images/camera.png';
+import truck from '../Images/truck.png';
+import shipment from '../Images/shipment.png';
+import quality from '../Images/quality.png';
+import quality2 from '../Images/quality2.png';
+import bulk from '../Images/bulk.png';
+import confirm from '../Images/confirm.png';
+
 import { Link } from 'react-router-dom';
 
 const Landingpage = () => {
@@ -102,6 +117,73 @@ const Landingpage = () => {
                         </p>
                     </div>
                 </div>
+            </section>
+            {/* Product Process */}
+            <section className='mt-24 px-5 md:px-10 lg:px-24'>
+            <div className='text-center text-5xl font-semibold pb-20'>
+                <h1>Product Process</h1>
+            </div>
+            <div className='grid grid-cols-6 md:grid-cols-10 lg:grid-cols-12 items-center gap-5'>
+                <div className='flex flex-col gap-5 items-center justify-center'>
+                    <img src={order} alt="" />
+                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>1</span>Order</p>
+                </div>
+                <img src={arrow} alt="" className='w-10' />
+                <div className='flex flex-col gap-5 items-center justify-center'>
+                    <img src={fabric} alt="" />
+                    <p className='text-sm font-semibold flex gap-1 items-center '> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>2</span>Fabric Choose</p>
+                </div>
+                <img src={arrow} alt="" className='w-10' />
+                <div className='flex flex-col gap-5 items-center justify-center'>
+                    <img src={design} alt="" />
+                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>3</span>Confirm Design</p>
+                </div>
+                <img src={arrow} alt="" className='w-10' />
+                <div className='flex flex-col gap-5 items-center justify-center'>
+                    <img src={price} alt="" />
+                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>4</span>Quoted Price</p>
+                </div>
+                <img src={arrow} alt="" className='w-10' />
+                <div className='flex flex-col gap-5 items-center justify-center'>
+                    <img src={production} alt="" />
+                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>5</span>Sample Production</p>
+                </div>
+                <img src={arrow} alt="" className='w-10' />
+                <div className='flex flex-col gap-5 items-center justify-center'>
+                    <img src={camera} alt="" />
+                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>6</span>Photography</p>
+                </div>
+                <img src={arrow} alt="" className='w-10' />
+                <div className='flex flex-col gap-5 items-center justify-center'>
+                    <img src={truck} alt="" />
+                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>7</span>Shipments</p>
+                </div>
+                <img src={arrow} alt="" className='w-10' />
+                <div className='flex flex-col gap-5 items-center justify-center'>
+                    <img src={shipment} alt="" />
+                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>8</span>Packaging</p>
+                </div>
+                <img src={arrow} alt="" className='w-10' />
+                <div className='flex flex-col gap-5 items-center justify-center'>
+                    <img src={quality} alt="" />
+                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>9</span>Final Quality Control</p>
+                </div>
+                <img src={arrow} alt="" className='w-10' />
+                <div className='flex flex-col gap-5 items-center justify-center'>
+                    <img src={quality2} alt="" />
+                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>10</span>Process Quality Control</p>
+                </div>
+                <img src={arrow} alt="" className='w-10' />
+                <div className='flex flex-col gap-5 items-center justify-center'>
+                    <img src={bulk} alt="" />
+                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>11</span>Bulk Production</p>
+                </div>
+                <img src={arrow} alt="" className='w-10' />
+                <div className='flex flex-col gap-5 items-center justify-center'>
+                    <img src={confirm} alt="" />
+                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>12</span>Confirm Bulk</p>
+                </div>
+            </div>
             </section>
             {/* New Release */}
             <section className='mt-24'>
@@ -224,7 +306,14 @@ const Landingpage = () => {
             </section>
             {/* Catagory section */}
             <section className='mt-24 px-5 md:px-10 lg:px-24'>
-            <div className='grid grid-cols2 md:grid-cols-3 lg:grid-cols-5 gap-8'>
+            <div className='text-center text-5xl font-semibold pb-20'>
+                <h1>Products</h1>
+            </div>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 justify-center'>
+                <Link className='relative'>
+                    <img src={shirt} alt="" />
+                    <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold  py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Shirt</h1>
+                </Link>
                 <Link className='relative'>
                     <img src={tshirt} alt="" />
                     <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold  py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>T-Shirt</h1>
