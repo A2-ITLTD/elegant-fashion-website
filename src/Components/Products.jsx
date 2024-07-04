@@ -30,7 +30,6 @@ import womenhoodie from '../Images/womenhoodie.jpg';
 import kidshoodie from '../Images/kidshoodie.jpg';
 import menjeans from '../Images/menjeans.jpg';
 import womenjeans from '../Images/womenjeans.jpg';
-import kidsjeans from '../Images/kidsjeans.jpg';
 import menshorts from '../Images/menshorts.jpg';
 import womenshorts from '../Images/womenshorts.jpeg';
 import kidsshorts from '../Images/kidsshorts.jpg';
@@ -45,7 +44,7 @@ import womenleggings from '../Images/womenleggings.jpg';
 import kidsleggings from '../Images/kidsleggings.jpeg';
 import menjeans2 from '../Images/menjeans2.jpeg';
 import womenjeans2 from '../Images/womenjeans2.jpeg';
-import kidsjeans2 from '../Images/kidsjeans.jpeg';
+import kidsjeans2 from '../Images/kidsjeans.jpg';
 const Products = () => {
     return (
         <div className="mt-16 px-5 md:px-14 lg:px-24">
@@ -224,7 +223,7 @@ const Products = () => {
                             <h1 className="absolute text-white text-center text-3xl font-bold py-2">Women</h1>
                             </Link>
                             <Link className="relative h-full flex items-center justify-center rounded-bl-3xl">
-                            <img src={kidsjeans} alt="" className="h-full w-full object-cover rounded-bl-3xl" />
+                            <img src={kidsjeans2} alt="" className="h-full w-full object-cover rounded-bl-3xl" />
                             <div className="absolute inset-0 bg-black opacity-50 rounded-bl-3xl hover:opacity-80"></div>
                             <h1 className="absolute text-white text-center text-3xl font-bold py-2">Kids</h1>
                             </Link>
