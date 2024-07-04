@@ -123,65 +123,102 @@ const Landingpage = () => {
             <div className='text-center text-5xl font-semibold pb-20'>
                 <h1>Product Process</h1>
             </div>
-            <div className='grid grid-cols-4 md:grid-cols-10 lg:grid-cols-12 items-center gap-5'>
-                <div className='flex flex-col gap-5 items-center justify-center'>
-                    <img src={order} alt="" />
-                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>1</span>Order</p>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 items-center justify-evenly gap-5'>
+               {/* 1 */}
+                <div className='flex  gap-7 items-center justify-center'>
+                    <div className='flex flex-col gap-3 border-2 border-black p-4 w-36 h-48 rounded-md items-center justify-center text-center'>
+                    <img src={order} alt="" className='w-16 h-16' />
+                    <p className='text-sm font-semibold flex gap-1 items-center w-full text-center'>1.Order</p>
+                    </div>
+                    <img src={arrow} alt="" className='w-5' />
                 </div>
-                <img src={arrow} alt="" className='w-10' />
-                <div className='flex flex-col gap-5 items-center justify-center'>
-                    <img src={fabric} alt="" />
-                    <p className='text-sm font-semibold flex gap-1 items-center '> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>2</span>Fabric Choose</p>
+                {/* 2 */}
+                <div className='flex  gap-7 items-center justify-center'>
+                    <div className='flex flex-col gap-3 border-2 border-black p-4 w-36 h-48 rounded-md items-center justify-center text-center'>
+                    <img src={fabric} alt="" className='w-16 h-16' />
+                    <p className='text-sm font-semibold flex gap-1 items-center w-full'>2.Fabric Choose</p>
+                    </div>
+                    <img src={arrow} alt="" className='w-5' />
                 </div>
-                <img src={arrow} alt="" className='w-10' />
-                <div className='flex flex-col gap-5 items-center justify-center'>
-                    <img src={design} alt="" />
-                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>3</span>Confirm Design</p>
+                {/* 3 */}
+                <div className='flex  gap-7 items-center justify-center'>
+                    <div className='flex flex-col gap-3 border-2 border-black p-4 w-36 h-48 rounded-md items-center justify-center text-center'>
+                    <img src={design} alt="" className='w-16 h-16' />
+                    <p className='text-sm font-semibold flex gap-1 items-center w-full'>3.Confirm Design</p>
+                    </div>
+                    <img src={arrow} alt="" className='w-5' />
                 </div>
-                <img src={arrow} alt="" className='w-10' />
-                <div className='flex flex-col gap-5 items-center justify-center'>
-                    <img src={price} alt="" />
-                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>4</span>Quoted Price</p>
+                {/* 4 */}
+                <div className='flex  gap-7 items-center justify-center'>
+                    <div className='flex flex-col gap-3 border-2 border-black p-4 w-36 h-48 rounded-md items-center justify-center text-center'>
+                    <img src={price} alt="" className='w-16 h-16' />
+                    <p className='text-sm font-semibold flex gap-1 items-center w-full'>4.Quoted Price</p>
+                    </div>
+                    <img src={arrow} alt="" className='w-5' />
                 </div>
-                <img src={arrow} alt="" className='w-10' />
-                <div className='flex flex-col gap-5 items-center justify-center'>
-                    <img src={production} alt="" />
-                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>5</span>Sample Production</p>
+                {/* 5 */}
+                <div className='flex gap-7 items-center justify-center'>
+                    <div className='flex flex-col gap-3 border-2 border-black p-4 w-36 h-48 rounded-md items-center justify-center text-center'>
+                    <img src={production} alt="" className='w-16 h-16' />
+                    <p className='text-sm font-semibold flex gap-1 items-center w-full'>5.Sample Production</p>
+                    </div>
+                    <img src={arrow} alt="" className='w-5' />
                 </div>
-                <img src={arrow} alt="" className='w-10' />
-                <div className='flex flex-col gap-5 items-center justify-center'>
-                    <img src={camera} alt="" />
-                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>6</span>Photography</p>
+                {/* 6 */}
+                <div className='flex  gap-7 items-center justify-center'>
+                    <div className='flex flex-col gap-3 border-2 border-black p-4 w-36 h-48 rounded-md items-center justify-center text-center'>
+                    <img src={camera} alt="" className='w-16 h-16' />
+                    <p className='text-sm font-semibold flex gap-1 items-center w-full'>6.Photography</p>
+                    </div>
+                    <img src={arrow} alt="" className='w-5' />
                 </div>
-                <img src={arrow} alt="" className='w-10' />
-                <div className='flex flex-col gap-5 items-center justify-center'>
-                    <img src={truck} alt="" />
-                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>7</span>Shipments</p>
+                {/* 7 */}
+                <div className='flex  gap-7 items-center justify-center'>
+                    <div className='flex flex-col gap-3 border-2 border-black p-4 w-36 h-48 rounded-md items-center justify-center text-center'>
+                    <img src={truck} alt="" className='w-16 h-16' />
+                    <p className='text-sm font-semibold flex gap-1 items-center w-full'>7.Shipments</p>
+                    </div>
+                    <img src={arrow} alt="" className='w-5' />
                 </div>
-                <img src={arrow} alt="" className='w-10' />
-                <div className='flex flex-col gap-5 items-center justify-center'>
-                    <img src={shipment} alt="" />
-                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>8</span>Packaging</p>
+                {/* 8 */}
+                <div className='flex gap-7 items-center justify-center'>
+                    <div className='flex flex-col gap-3 border-2 border-black p-4 w-36 h-48 rounded-md items-center justify-center text-center'>
+                    <img src={shipment} alt="" className='w-16 h-16' />
+                    <p className='text-sm font-semibold flex gap-1 items-center w-full'>8.Packaging</p>
+                    </div>
+                    <img src={arrow} alt="" className='w-5' />
                 </div>
-                <img src={arrow} alt="" className='w-10' />
-                <div className='flex flex-col gap-5 items-center justify-center'>
-                    <img src={quality} alt="" />
-                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>9</span>Final Quality Control</p>
+                {/* 9 */}
+                <div className='flex gap-7 items-center justify-center'>
+                    <div className='flex flex-col gap-3 border-2 border-black p-4 w-36 h-48 rounded-md items-center justify-center text-center'>
+                    <img src={quality} alt="" className='w-16 h-16' />
+                    <p className='text-sm font-semibold flex gap-1 items-center w-full'>9.Final Quality Control</p>
+                    </div>
+                    <img src={arrow} alt="" className='w-5' />
                 </div>
-                <img src={arrow} alt="" className='w-10' />
-                <div className='flex flex-col gap-5 items-center justify-center'>
-                    <img src={quality2} alt="" />
-                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>10</span>Process Quality Control</p>
+                {/* 10 */}
+                <div className='flex gap-7 items-center justify-center'>
+                    <div className='flex flex-col gap-3 border-2 border-black p-4 w-36 h-48 rounded-md items-center justify-center text-center'>
+                    <img src={quality2} alt="" className='w-16 h-16' />
+                    <p className='text-sm font-semibold flex gap-1 items-center w-full'>10.Process Quality Control</p>
+                    </div>
+                    <img src={arrow} alt="" className='w-5' />
                 </div>
-                <img src={arrow} alt="" className='w-10' />
-                <div className='flex flex-col gap-5 items-center justify-center'>
-                    <img src={bulk} alt="" />
-                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>11</span>Bulk Production</p>
+                {/* 11 */}
+                <div className='flex gap-7 items-center justify-center'>
+                    <div className='flex flex-col gap-3 border-2 border-black p-4 w-36 h-48 rounded-md items-center justify-center text-center'>
+                    <img src={bulk} alt="" className='w-16 h-16' />
+                    <p className='text-sm font-semibold flex gap-1 items-center w-full'>11.Bulk Production</p>
+                    </div>
+                    <img src={arrow} alt="" className='w-5' />
                 </div>
-                <img src={arrow} alt="" className='w-10' />
-                <div className='flex flex-col gap-5 items-center justify-center'>
-                    <img src={confirm} alt="" />
-                    <p className='text-sm font-semibold flex gap-1 items-center'> <span className='text-sm font-semibold bg-black text-white rounded-full py-1 px-2'>12</span>Confirm Bulk</p>
+                {/* 12 */}
+                <div className='flex gap-7 items-center justify-center'>
+                    <div className='flex flex-col gap-3 border-2 border-black p-4 w-36 h-48 rounded-md items-center justify-center text-center'>
+                    <img src={confirm} alt="" className='w-16 h-16' />
+                    <p className='text-sm font-semibold flex gap-1 items-center w-full'>12.Confirm Bulk</p>
+                    </div>
+                    <img src={arrow} alt="" className='w-5' />
                 </div>
             </div>
             </section>

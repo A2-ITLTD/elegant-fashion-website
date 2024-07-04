@@ -8,14 +8,14 @@ import hoodie from '../Images/hoodie.jpg';
 const About = () => {
     return (
         <div className='mt-24 px-5 md:px-14 lg:px-52 flex flex-col-reverse md:flex-row gap-20'>
-            <div className="w-full md:w-1/5 flex flex-col gap-10 h-auto flex-grow">
-                <img src={shirt} className='h-full object-cover' />
-                <img src={cloth} className='h-full object-cover'/>
-                <img src={jeans}  className='h-full object-cover'/>
-                <img src={womenshirt} className='h-full object-cover object-center' />
+            <div className="w-full md:w-1/5 flex flex-col gap-10">
+                <img src={shirt} />
+                <img src={cloth} />
+                <img src={jeans} />
+                <img src={womenshirt} />
                 <img src={polo}  />
-                {/* <img src={winter} alt="" />
-                <img src={hoodie} alt="" /> */}
+                <img src={winter}  />
+                <img src={hoodie}  />
             </div>
             <div className="w-full md:w-4/5 text-left flex flex-col gap-5"> 
                 <h1 className='text-3xl font-bold text-yellow-700'>About Us</h1>
