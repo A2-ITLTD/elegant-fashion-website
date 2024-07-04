@@ -5,6 +5,9 @@ import womenshirt from '../Images/womenshirt.jpg';
 import polo from '../Images/polo.jpg';
 import winter from '../Images/winter.jpg';
 import hoodie from '../Images/hoodie.jpg';
+import sweartshirt2 from '../Images/sweatshirt2.jpg';
+import tshirt5 from '../Images/tshirt5.jpg';
+import winter2 from '../Images/winter2.jpg';
 const About = () => {
     return (
         <div className='mt-24 px-5 md:px-14 lg:px-52 flex flex-col-reverse md:flex-row gap-20'>
@@ -16,6 +19,9 @@ const About = () => {
                 <img src={polo}  />
                 <img src={winter}  />
                 <img src={hoodie}  />
+                <img src={tshirt5}  />
+                <img src={winter2}  />
+                <img src={sweartshirt2}  />
             </div>
             <div className="w-full md:w-4/5 text-left flex flex-col gap-5"> 
                 <h1 className='text-3xl font-bold text-yellow-700'>About Us</h1>

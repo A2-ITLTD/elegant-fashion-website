@@ -37,7 +37,7 @@ import quality from '../Images/quality.png';
 import quality2 from '../Images/quality2.png';
 import bulk from '../Images/bulk.png';
 import confirm from '../Images/confirm.png';
-
+import whitearrow from '../Images/whitearrow.png';
 import { Link } from 'react-router-dom';
 
 const Landingpage = () => {
@@ -69,18 +69,18 @@ const Landingpage = () => {
                     <div>
                     <img src={bg1} alt="Slide 1" className='w-full h-[650px] object-cover object-top' />
                     </div>
-                    <button className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl font-semibold bg-[#00000080] text-white py-5 px-16 flex items-center gap-5 hover:bg-black hover:bg-opacity-90 transition duration-300'>
+                    <Link to="/Products" className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl font-semibold bg-[#00000080] text-white py-5 px-16 flex items-center gap-5 hover:bg-black hover:bg-opacity-90 transition duration-300'>
                     Shop Now <BiSolidRightArrow />
-                    </button>
+                    </Link>
                 </div>
 
                 <div className='relative h-fit'>
                     <div><img src={bg2} alt="Slide 1" className='w-full h-[650px] object-cover object-top' /></div>
-                    <button className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-4xl font-semibold bg-[#00000080] text-white py-5 px-16 flex items-center gap-5 hover:bg-black hover:bg-opacity-90 transition duration-300'>Shop Now <BiSolidRightArrow /></button>
+                    <Link to="/Products" className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-4xl font-semibold bg-[#00000080] text-white py-5 px-16 flex items-center gap-5 hover:bg-black hover:bg-opacity-90 transition duration-300'>Shop Now <BiSolidRightArrow /></Link>
                 </div>
                 <div className='relative h-fit'>
                     <div><img src={bg3} alt="Slide 1" className='w-full h-[650px] object-cover object-top' /></div>
-                    <button className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-4xl font-semibold bg-[#00000080] text-white py-5 px-16 flex items-center gap-5 hover:bg-black hover:bg-opacity-90 transition duration-300'>Shop Now <BiSolidRightArrow /></button>
+                    <Link to="/Products" className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-4xl font-semibold bg-[#00000080] text-white py-5 px-16 flex items-center gap-5 hover:bg-black hover:bg-opacity-90 transition duration-300'>Shop Now <BiSolidRightArrow /></Link>
                 </div>
                
             </Carousel>
@@ -218,7 +218,7 @@ const Landingpage = () => {
                     <img src={confirm} alt="" className='w-16 h-16' />
                     <p className='text-sm font-semibold flex gap-1 items-center w-full'>12.Confirm Bulk</p>
                     </div>
-                    <img src={arrow} alt="" className='w-5' />
+                    <img src={whitearrow} alt="" className='w-5 text-white' />
                 </div>
             </div>
             </section>

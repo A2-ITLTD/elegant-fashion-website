@@ -3,7 +3,8 @@ import React, { useRef } from 'react';
 import facebook from '../Images/facebook.png';
 import instagram from '../Images/instagram.png';
 import linkedin from '../Images/linkedin.png';
-import youtube from '../Images/youtube.png';
+import alibaba from '../Images/alibaba_logo.png';
+import whatsapp from '../Images/whatsapp.png';
 import logo from '../Images/elegant-logo-removebg.png'
 import {ToastContainer , toast } from 'react-toastify';
 import { Link } from "react-router-dom";
@@ -57,7 +58,8 @@ const Footer = () => {
                     <div className='flex items-center justify-start gap-7 pt-3'>
                         <img src={facebook} alt="" className='w-10'/>
                         <img src={instagram} alt="" className='w-10'/>
-                        <img src={youtube} alt="" className='w-10'/>
+                        <img src={whatsapp} alt="" className='w-10'/>
+                        <img src={alibaba} alt="" className='w-10'/>
                         <img src={linkedin} alt="" className='w-10'/>
                     </div>
                 </div>
