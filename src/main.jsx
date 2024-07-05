@@ -12,6 +12,14 @@ import Landingpage from './Components/Landingpage.jsx';
 import About from './Components/About.jsx';
 import Contact from './Components/Contact.jsx';
 import Products from './Components/Products.jsx';
+import ItemShirt from './Components/ItemShirt.jsx';
+import ItemTshirt from './Components/ItemTshirt.jsx';
+import ItemPolo from './Components/ItemPolo.jsx';
+import ItemWinter from './Components/ItemWinter.jsx';
+import ItemHoodie from './Components/ItemHoodie.jsx';
+import ItemDenim from './Components/ItemDenim.jsx';
+import ItemShorts from './Components/ItemShorts.jsx';
+import ItemTrouser from './Components/ItemTrouser.jsx';
 const router = createBrowserRouter([ 
  { 
  path: "/", 
@@ -32,6 +40,38 @@ const router = createBrowserRouter([
   {
     path: "/Products",
     element: <Products></Products>,
+  },
+  {
+    path: "/Shirt",
+    element: <ItemShirt></ItemShirt>,
+  },
+  {
+    path: "/Tshirt",
+    element:  <ItemTshirt></ItemTshirt>,
+  },
+  {
+    path: "/Polo",
+    element: <ItemPolo></ItemPolo>,
+  },
+  {
+    path: "/Winter",
+    element: <ItemWinter></ItemWinter>,
+  },
+  {
+    path: "/Hoodie",
+    element: <ItemHoodie></ItemHoodie>,
+  },
+  {
+    path: "/Denim",
+    element: <ItemDenim></ItemDenim>,
+  },
+  {
+    path: "/Shorts",
+    element: <ItemShorts></ItemShorts>,
+  },
+  {
+    path: "/Trouser",
+    element: <ItemTrouser></ItemTrouser>,
   },
 
   ]

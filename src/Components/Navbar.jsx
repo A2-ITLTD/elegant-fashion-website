@@ -29,14 +29,14 @@ const Navbar = () => {
                         <div tabIndex={0} role="button" className="">Products</div>
                         <ul tabIndex={0} className="dropdown-content menu bg-base-100 z-[1] w-52 p-4 shadow text-blac flex flex-col gap-2 text-black">
                             <Link to="/Products" className="hover:underline"><a>All Products</a></Link>
-                            <Link className="hover:underline"><a>Shirt</a></Link>
-                            <Link className="hover:underline"><a>T-Shirt</a></Link>
-                            <Link className="hover:underline"><a>Polo-Shirt</a></Link>
-                            <Link className="hover:underline"><a>Winter Wear</a></Link>
-                            <Link className="hover:underline"><a>Hoodies and Sweatshirt</a></Link>
-                            <Link className="hover:underline"><a>Denim Pant</a></Link>
-                            <Link className="hover:underline"><a>Shorts</a></Link>
-                            <Link className="hover:underline"><a>Trouser</a></Link>
+                            <Link to="/Shirt" className="hover:underline"><a>Shirt</a></Link>
+                            <Link to="/Tshirt" className="hover:underline"><a>T-Shirt</a></Link>
+                            <Link to="/Polo" className="hover:underline"><a>Polo-Shirt</a></Link>
+                            <Link to="/Winter" className="hover:underline"><a>Winter Wear</a></Link>
+                            <Link to="/Hoodie"  className="hover:underline"><a>Hoodies and Sweatshirt</a></Link>
+                            <Link to="/Denim" className="hover:underline"><a>Denim Pant</a></Link>
+                            <Link to="/Shorts" className="hover:underline"><a>Shorts</a></Link>
+                            <Link to="/Trouser" className="hover:underline"><a>Trouser</a></Link>
                             <Link className="hover:underline"><a>Cargo</a></Link>
                             <Link className="hover:underline"><a>Leggins Items</a></Link>
                             <Link className="hover:underline"><a>Jeans</a></Link>

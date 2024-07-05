@@ -35,7 +35,18 @@ const Contact = () => {
             <p className='text-base font-medium opacity-70 py-4'>Kindly fill the form and our team will get in touch with you shortly.</p>
             <form ref={form} onSubmit={sendEmail} className='flex flex-col w-full gap-7' >
                 <input type="text" name="user_name" placeholder='Name' className='py-2 px-5 border-2 border-black rounded-md text-lg text-black' />
-                <input type="number" name="user_phone"  placeholder='Phone Number' className='py-2 px-5 border-2 border-black rounded-md text-lg text-black' />
+                <input 
+                type="tel" 
+                required 
+                name="user_phone"  
+                placeholder="Phone Number" 
+                className="py-2 px-5 border-2 border-black rounded-md text-lg text-black" 
+                onKeyPress={(e) => {
+                    if (!/[0-9]/.test(e.key)) {
+                    e.preventDefault();
+                    }
+                }}
+                />
                 <input type="email" name="user_email" placeholder='Email' className='py-2 px-5 border-2 border-black rounded-md text-lg text-black' />
                 <textarea type="text" name="message" placeholder='Write Your Message' className='py-2 px-5 border-2 border-black rounded-md text-lg text-black textarea textarea-bordered textarea-2xl w-full'></textarea>
                 <button type="submit" value="Send" className='bg-black text-white font-semibold p-5 rounded-lg hover:bg-slate-700' >Send</button>
