@@ -25,6 +25,17 @@ import kidshirt4 from '../ItemsImage/kidshirt4.jpeg';
 import kidshirt5 from '../ItemsImage/kidshirt5.jpeg';
 import kidshirt6 from '../ItemsImage/kidshirt6.jpg';
 
+import menpolo1 from '../ItemsImage/menpolo1.jpg';
+import menleggings1 from '../ItemsImage/menleggings1.png';
+import menhoodie1 from '../ItemsImage/menhoodie1.jpg';
+import mencargo1 from '../ItemsImage/mencargo1.jpg';
+import mendenim1 from '../ItemsImage/mendenim1.jpg';
+import menshorts1 from '../ItemsImage/menshorts1.jpg';
+import mentrouser1 from '../ItemsImage/mentrouser1.jpg';
+import mentshirt1 from '../ItemsImage/mentshirt1.jpg';
+import menwinter1 from '../ItemsImage/menwinter1.jpeg';
+import menjeans1 from '../ItemsImage/menjeans1.png';
+import { Link } from 'react-router-dom';
 const ItemShirt = () => {
 
     return (
@@ -413,6 +424,71 @@ const ItemShirt = () => {
                     </Carousel>    
                 </TabPanel>
             </Tabs>
+            <div className='w-full text-center text-3xl font-semibold  opacity-70 mt-20 border-none'>
+                <button className='hover:underline'> View More From</button>
+            </div>
+            <div className='mt-10 grid grid-cols-2 md:grid-cols-5 gap-10 px-5 md:px-24'> 
+                <Link to="/Polo" className='relative w-40 h-40 rounded-full'>
+                    <img src={menpolo1} className='w-full h-full object-cover object-center rounded-full' />
+                    <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
+                    <h1 className="absolute text-white text-center text-3xl font-bold bottom-14 left-12">Polo</h1>
+                </Link>
+
+                <Link to="/Tshirt" className='relative w-40 h-40 rounded-full'>
+                    <img src={mentshirt1} className='w-full h-full object-cover object-center rounded-full' />
+                    <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
+                    <h1 className="absolute text-white text-center text-3xl font-bold bottom-14 left-6">T-Shirt</h1>
+                </Link>
+
+                <Link to="/Leggings" className='relative w-40 h-40 rounded-full'>
+                    <img src={menleggings1} className='w-full h-full object-cover object-center rounded-full' />
+                    <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
+                    <h1 className="absolute text-white text-center text-2xl font-bold bottom-10 left-6">Leggings <br /> Pants</h1>
+                </Link>
+
+                <Link to="/Winter" className='relative w-40 h-40 rounded-full'>
+                    <img src={menwinter1} className='w-full h-full object-cover object-center rounded-full' />
+                    <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
+                    <h1 className="absolute text-white text-center text-3xl font-bold bottom-10 left-8">Winter <br /> Wear</h1>
+                </Link>
+
+                <Link to="/Denim" className='relative w-40 h-40 rounded-full'>
+                    <img src={mendenim1} className='w-full h-full object-cover object-center rounded-full' />
+                    <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
+                    <h1 className="absolute text-white text-center text-3xl font-bold bottom-14 left-8">Denim</h1>
+                </Link>
+
+                {/* 2nd row  */}
+                <Link to="/Jeans" className='relative w-40 h-40 rounded-full'>
+                    <img src={menjeans1} className='w-full h-full object-cover object-center rounded-full' />
+                    <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
+                    <h1 className="absolute text-white text-center text-3xl font-bold bottom-14 left-8">Jeans</h1>
+                </Link>
+
+                <Link to="/Shorts" className='relative w-40 h-40 rounded-full'>
+                    <img src={menshorts1} className='w-full h-full object-cover object-center rounded-full' />
+                    <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
+                    <h1 className="absolute text-white text-center text-3xl font-bold bottom-14 left-8">Shorts</h1>
+                </Link>
+
+                <Link to="/Trouser" className='relative w-40 h-40 rounded-full'>
+                    <img src={mentrouser1} className='w-full h-full object-cover object-center rounded-full' />
+                    <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
+                    <h1 className="absolute text-white text-center text-3xl font-bold bottom-14 left-5">Trousers</h1>
+                </Link>
+
+                <Link to="/Cargo"  className='relative w-40 h-40 rounded-full'>
+                    <img src={mencargo1} className='w-full h-full object-cover object-center rounded-full' />
+                    <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
+                    <h1 className="absolute text-white text-center text-3xl font-bold bottom-14 left-8">Cargo</h1>
+                </Link>
+
+                <Link to="/Hoodie" className='relative w-40 h-40 rounded-full'>
+                    <img src={menhoodie1} className='w-full h-full object-cover object-center rounded-full' />
+                    <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
+                    <h1 className="absolute text-white text-center text-xl font-bold bottom-14 left-5">Hoodies & <br /> Sweatshits</h1>
+                </Link>
+            </div>
         </div>
     );
 };

@@ -20,6 +20,9 @@ import ItemHoodie from './Components/ItemHoodie.jsx';
 import ItemDenim from './Components/ItemDenim.jsx';
 import ItemShorts from './Components/ItemShorts.jsx';
 import ItemTrouser from './Components/ItemTrouser.jsx';
+import ItemCargo from './Components/ItemCargo.jsx';
+import ItemLeggings from './Components/ItemLeggings.jsx';
+import ItemJeans from './Components/ItemJeans.jsx';
 const router = createBrowserRouter([ 
  { 
  path: "/", 
@@ -72,6 +75,18 @@ const router = createBrowserRouter([
   {
     path: "/Trouser",
     element: <ItemTrouser></ItemTrouser>,
+  },
+  {
+    path: "/Cargo",
+    element: <ItemCargo></ItemCargo>,
+  },
+  {
+    path: "/Leggings",
+    element: <ItemLeggings></ItemLeggings>,
+  },
+  {
+    path: "/Jeans",
+    element: <ItemJeans></ItemJeans>,
   },
 
   ]

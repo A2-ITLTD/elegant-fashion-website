@@ -53,7 +53,7 @@ const Products = () => {
             {/* 1st row */}
            <div className="flex flex-col md:flex-row justify-between gap-20">
                 {/* first col */}
-                <div className="w-full md:w-1/2">
+                <Link to="/Tshirt" className="w-full md:w-1/2">
                     <div className='text-center text-3xl font-bold py-4'>
                         <h1>T-Shirt</h1>
                     </div>
@@ -80,9 +80,9 @@ const Products = () => {
                             <img src={heart} className='absolute top-5 right-5 w-7 transform transition-transform duration-300 hover:scale-125' />
                         </div>
                     </div>
-                </div>
+                </Link>
                 {/* 2nd col */}
-                <div className="w-full md:w-1/2">
+                <Link to="/Shirt" className="w-full md:w-1/2">
                     <div className='text-center text-3xl font-bold py-4'>
                         <h1>Shirt</h1>
                     </div>
@@ -109,14 +109,14 @@ const Products = () => {
                             <img src={heart} className='absolute top-5 right-5 w-7 transform transition-transform duration-300 hover:scale-125' />
                         </div>
                     </div>
-                </div>
+                </Link>
            </div>
 
 
            {/* 2nd row */}
            <div className="flex flex-col md:flex-row justify-between gap-20 my-10">
                 {/* 3rd col */}
-                <div className="w-full md:w-1/2">
+                <Link to="/Winter" className="w-full md:w-1/2">
                     <div className='text-center text-3xl font-bold py-4'>
                         <h1>Winter Wear</h1>
                     </div>
@@ -143,9 +143,9 @@ const Products = () => {
                             <img src={heart} className='absolute top-5 right-5 w-7 transform transition-transform duration-300 hover:scale-125' />
                         </div>
                     </div>
-                </div>
+                </Link>
                 {/* 2nd col */}
-                <div className="w-full md:w-1/2">
+                <Link to="/Polo" className="w-full md:w-1/2">
                     <div className='text-center text-3xl font-bold py-4'>
                         <h1>Polo-Shirt</h1>
                     </div>
@@ -172,13 +172,13 @@ const Products = () => {
                             <img src={heart} className='absolute top-5 right-5 w-7 transform transition-transform duration-300 hover:scale-125' />
                         </div>
                     </div>
-                </div>
+                </Link>
            </div>
 
            {/* 3rd row */}
            <div className="flex flex-col md:flex-row justify-between gap-20 my-10">
                 {/* 5rd col */}
-                <div className="w-full md:w-1/2">
+                <Link to="/Hoodie" className="w-full md:w-1/2">
                     <div className='text-center text-3xl font-bold py-4'>
                         <h1>Hoodies and Sweatshirts</h1>
                     </div>
@@ -205,9 +205,9 @@ const Products = () => {
                             <img src={heart} className='absolute top-5 right-5 w-7 transform transition-transform duration-300 hover:scale-125' />
                         </div>
                     </div>
-                </div>
+                </Link>
                 {/* 6th col */}
-                <div className="w-full md:w-1/2">
+                <Link to="/Denim" className="w-full md:w-1/2">
                     <div className='text-center text-3xl font-bold py-4'>
                         <h1>Denim Pant</h1>
                     </div>
@@ -234,13 +234,13 @@ const Products = () => {
                             <img src={heart} className='absolute top-5 right-5 w-7 transform transition-transform duration-300 hover:scale-125' />
                         </div>
                     </div>
-                </div>
+                </Link>
            </div>
 
            {/*  4th row */}
            <div className="flex flex-col md:flex-row justify-between gap-20 my-10">
                 {/* 7th col */}
-                <div className="w-full md:w-1/2">
+                <Link to="/Shorts" className="w-full md:w-1/2">
                     <div className='text-center text-3xl font-bold py-4'>
                         <h1>Shorts</h1>
                     </div>
@@ -267,9 +267,9 @@ const Products = () => {
                             <img src={heart} className='absolute top-5 right-5 w-7 transform transition-transform duration-300 hover:scale-125' />
                         </div>
                     </div>
-                </div>
+                </Link>
                 {/* 8th col */}
-                <div className="w-full md:w-1/2">
+                <Link to="/Trouser" className="w-full md:w-1/2">
                     <div className='text-center text-3xl font-bold py-4'>
                         <h1>Trouser</h1>
                     </div>
@@ -296,13 +296,13 @@ const Products = () => {
                             <img src={heart} className='absolute top-5 right-5 w-7 transform transition-transform duration-300 hover:scale-125' />
                         </div>
                     </div>
-                </div>
+                </Link>
            </div>
 
            {/*  5th row */}
            <div className="flex flex-col md:flex-row justify-between gap-20 my-10">
                 {/* 8th col */}
-                <div className="w-full md:w-1/2">
+                <Link to="/Cargo" className="w-full md:w-1/2">
                     <div className='text-center text-3xl font-bold py-4'>
                         <h1>Cargo</h1>
                     </div>
@@ -329,9 +329,9 @@ const Products = () => {
                             <img src={heart} className='absolute top-5 right-5 w-7 transform transition-transform duration-300 hover:scale-125' />
                         </div>
                     </div>
-                </div>
+                </Link>
                 {/* 9th col */}
-                <div className="w-full md:w-1/2">
+                <Link to="/Leggings" className="w-full md:w-1/2">
                     <div className='text-center text-3xl font-bold py-4'>
                         <h1>Leggings Items</h1>
                     </div>
@@ -358,13 +358,13 @@ const Products = () => {
                             <img src={heart} className='absolute top-5 right-5 w-7 transform transition-transform duration-300 hover:scale-125' />
                         </div>
                     </div>
-                </div>
+                </Link>
            </div>
 
            {/*  6th row */}
            <div className="flex flex-col md:flex-row justify-between gap-20 my-10">
                 {/* 9th col */}
-                <div className="w-full md:w-1/2">
+                <Link to="/Jeans" className="w-full md:w-1/2">
                     <div className='text-center text-3xl font-bold py-4'>
                         <h1>Jeans</h1>
                     </div>
@@ -391,7 +391,7 @@ const Products = () => {
                             <img src={heart} className='absolute top-5 right-5 w-7 transform transition-transform duration-300 hover:scale-125' />
                         </div>
                     </div>
-                </div>
+                </Link>
            </div>
         </div>
     );
