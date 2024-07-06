@@ -11,19 +11,18 @@ import winter2 from '../Images/winter2.jpg';
 const About = () => {
     return (
         <div className='mt-24 px-5 md:px-14 lg:px-52 flex flex-col-reverse md:flex-row gap-20'>
-            <div className="w-full md:w-1/5 flex flex-col gap-10">
-                <img src={shirt} />
-                <img src={cloth} />
-                <img src={jeans} />
-                <img src={womenshirt} />
-                <img src={polo}  />
-                <img src={winter}  />
-                <img src={hoodie}  />
+            <div className="w-full md:w-[550px] flex flex-col gap-10 h-auto">
+                <img src={shirt} className='w-full h-full object-cover' />
+                <img src={cloth} className='w-full h-full object-cover'/>
+                <img src={jeans} className='w-full h-full object-cover'/>
+                <img src={womenshirt} className='w-full h-full object-cover'/>
+                <img src={polo}  className='w-full h-full object-cover'/>
+                <img src={winter}  className='w-full h-full object-cover'/>
+                {/* <img src={hoodie}  />
                 <img src={tshirt5}  />
-                <img src={winter2}  />
-                <img src={sweartshirt2}  />
+                <img src={winter2}  /> */}
             </div>
-            <div className="w-full md:w-4/5 text-left flex flex-col gap-5"> 
+            <div className="w-full md:w-full text-left flex flex-col gap-5"> 
                 <h1 className='text-3xl font-bold text-yellow-700'>About Us</h1>
                 <p className='text-base font-medium text-black opacity-70 text-justify'>
                 <b>Elegant Fashion</b> is a rapidly growing buying and merchandising service for apparel and textiles buyers worldwide. Supported by numerous sourcing factories, we ensure superior quality and meet the growing demand with close-in manufacturing support. Our extensive and dynamic network of vendors guarantees excellence. We are dedicated to quality and committed to sincerely serving our buyers, delivering products that achieve complete satisfaction.

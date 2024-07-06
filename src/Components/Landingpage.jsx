@@ -347,48 +347,48 @@ const Landingpage = () => {
                 <h1>Products</h1>
             </div>
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 justify-center'>
-                <Link className='relative'>
+                <Link to="/Shirt" className='relative'>
                     <img src={shirt} alt="" />
                     <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold  py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Shirt</h1>
                 </Link>
-                <Link className='relative'>
+                <Link to="/Tshirt" className='relative'>
                     <img src={tshirt} alt="" />
                     <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold  py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>T-Shirt</h1>
                 </Link>
-                <Link className='relative'>
+                <Link to="/Polo" className='relative'>
                     <img src={polo} alt="" />
                     <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Polo-Shirt</h1>
                 </Link>
-                <Link className='relative'>
+                <Link to="/Winter" className='relative'>
                     <img src={winter} alt="" />
                     <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Winter Wear</h1>
                 </Link>
-                <Link className='relative'>
+                <Link to="/Hoodie" className='relative'>
                     <img src={hoodie} alt="" />
                     <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Hoodies and Sweatshirt</h1>
                 </Link>
-                <Link className='relative'>
+                <Link to="/Denim" className='relative'>
                     <img src={denim} alt="" />
                     <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Denim Pants</h1>
                 </Link>
                 {/* 2nd row */}
-                <Link className='relative'>
+                <Link to="/Shorts" className='relative'>
                     <img src={shorts} alt="" />
                     <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Shorts</h1>
                 </Link>
-                <Link className='relative'>
+                <Link to="/Trouser" className='relative'>
                     <img src={trouser} alt="" />
                     <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Trouser</h1>
                 </Link>
-                <Link className='relative'>
+                <Link to="/Cargo" className='relative'>
                     <img src={cargo} alt="" />
                     <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Cargo</h1>
                 </Link>
-                <Link className='relative'>
+                <Link to="/Leggings" className='relative'>
                     <img src={leggins} alt="" />
                     <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Legging Items</h1>
                 </Link>
-                <Link className='relative'>
+                <Link to="/Jeans" className='relative'>
                     <img src={jeans} alt="" />
                     <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Jeans</h1>
                 </Link>
