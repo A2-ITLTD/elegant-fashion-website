@@ -64,19 +64,23 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='text-sm flex flex-col gap-2 '>
+                    <h1 className='font-medium'>COMPANY INFO</h1>
+                    <Link to="/Contact" className='font-light opacity-80'>Contact Us</Link>
+                    <p className='font-light opacity-80'>Email: info@elegantfashionasia.com</p>
+                    <p className='font-light opacity-80'>Phone: +880 1305 785 685</p>
+                    <p className='font-light opacity-80'>Factory Address: 4-MOTIJHEEL COMMERCIAL AREA, <br /> SUITE # 29/A, LEVEL # 7, <br />Dhaka, Bangladesh                    </p>
+                    <p className='font-light opacity-80'>Trade License: TRAD/DNCC/001127/2024</p>
+                </div>
+                <div className='text-sm flex flex-col gap-2 '>
                     <h1 className='font-medium'>INFORMATION</h1>
                     <Link to="/About" className='font-light opacity-80'>About Us</Link>
                     <p className='font-light opacity-80'>Terms and Conditions</p>
-                    <p className='font-light opacity-80'>Shipping and Return</p>
-                    <p className='font-light opacity-80'>Privacy Policy</p>
-                    <p className='font-light opacity-80'>Blog</p>
-                </div>
-                <div className='text-sm flex flex-col gap-2'>
-                    <h1 className='font-medium'>CUSTOMER SERVICE</h1>
-                    <Link to="/Contact" className='font-light opacity-80'>Contact Us</Link>
                     <p className='font-light opacity-80'>Return, Refund & Exchange</p>
                     <p className='font-light opacity-80'>Site Map</p>
                     <p className='font-light opacity-80'>Track Order</p>
+                    <p className='font-light opacity-80'>Shipping and Return</p>
+                    <p className='font-light opacity-80'>Privacy Policy</p>
+                    
                 </div>
             </div>
             <div className='px-10 md:px-20 lg:px-24 py-4 border-t-2 border-[#00000032] flex items-center justify-between'>

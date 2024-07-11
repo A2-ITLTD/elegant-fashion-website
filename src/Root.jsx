@@ -13,7 +13,7 @@ const Root = () => {
             <Footer></Footer>
             <ToastContainer position="top-center" />
             <div className="fixed bottom-6 right-6">
-                <a href="https://wa.me/+8801846937397?text=Hello how can I help you?" target="_blank">
+                <a href="https://wa.me/+8801305785685?text=Hello how can I help you?" target="_blank">
                     <img src={whatsapp} className="w-20" title="Chat with Us" />
                 </a>
             </div>

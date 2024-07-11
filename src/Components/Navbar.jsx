@@ -12,8 +12,10 @@ const Navbar = () => {
             {/* 1st navbar */}
             <div className="bg-black text-white font-light text-xs md:text-xs py-2  px-5 md:px-20 flex justify-center md:justify-center gap-5 md:gap-10 items-center">
                 <img src={alibaba_image} className="w-44" />
-                <p className="flex items-center gap-1 md:gap-2 hover:text-[#acacac]"><MdEmail />elegantfashion70@gmail.com</p>
-                <p className="hover:text-[#acacac]">Call or Text (+880 1846937397)</p>
+                <p className="flex items-center gap-1 md:gap-2 hover:text-[#acacac]"><MdEmail />info@elegantfashionasia.com
+                </p>
+                <p className="hover:text-[#acacac]">Call or Text (+880 1305 785 685
+                )</p>
             </div>
             {/* main navbar */}
             <div className="px-4 lg:px-20 py-2 md:py-3 text-sm lg:text-xl font-semibold text-[#1D242B] flex flex-row-reverse md:flex-row  gap-4 md:gap-0 justify-between items-center">
@@ -46,6 +48,7 @@ const Navbar = () => {
                         </Link>
                         <Link to="/About" className="hover:underline">About Us</Link>
                         <Link to="/Product"  className="hover:underline ">Profile</Link>
+                        <Link to="/" className="hover:underline">Privacy & Policy</Link>
                         <Link to="/Contact" className="hover:underline">Contact Us</Link>
                     </ul>
                 </div>
