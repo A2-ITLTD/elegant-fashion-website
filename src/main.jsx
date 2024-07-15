@@ -23,6 +23,7 @@ import ItemTrouser from './Components/ItemTrouser.jsx';
 import ItemCargo from './Components/ItemCargo.jsx';
 import ItemLeggings from './Components/ItemLeggings.jsx';
 import ItemJeans from './Components/ItemJeans.jsx';
+import Policy from './Components/Policy.jsx';
 const router = createBrowserRouter([ 
  { 
  path: "/", 
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: "/Products",
     element: <Products></Products>,
+  },
+  {
+    path: "/Policy",
+    element: <Policy></Policy>
   },
   {
     path: "/Shirt",
