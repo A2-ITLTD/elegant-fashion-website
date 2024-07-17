@@ -84,7 +84,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='px-10 md:px-20 lg:px-24 py-4 border-t-2 border-[#00000032] flex items-center justify-between'>
-                <img src={logo} alt="" className='w-32 bg-black px-5 py-1' />
+                <img src={logo} alt="" className='w-36 ' />
                 <h1 className='text-base font-semibold'>@ 2024 Elegant Fashion</h1>
             </div>
         </div>
