@@ -42,6 +42,35 @@ import { Link } from 'react-router-dom';
 
 const ItemWinter = () => {
 
+    const handleOrder = e => {
+        e.preventDefault();
+        const username = e.target.elements.user_name.value;
+        const number = e.target.elements.user_phone.value;
+        const email = e.target.elements.user_email.value;
+        const address = e.target.elements.location.value;
+        const product = e.target.elements.Items.value;
+        const quantity = e.target.elements.quantity.value;
+        const samplequantity = e.target.elements.samplequantity.value;
+        
+        
+        // send message to whatsapp
+        const whatsappNumber = "+8801305785685" 
+
+
+        var url = "https://wa.me/" + whatsappNumber + "?text="
+        + "*Name :* " + username + "%0a"
+        + "*Number :* " + number + "%0a"
+        + "*Email :* " + email + "%0a"
+        + "*Address :* " + address + "%0a"
+        + "*Product :* " + product + "%0a"
+        + "*Quantity :* " + quantity + "%0a"
+        + "*Sample Quantity :* " + samplequantity + "%0a";
+        
+
+        window.open(url, '_blank').focus();   
+    
+    };
+
     return (
         <div className="mt-14 px-5 md:px-10 lg:px-24" >
            <div className='text-center text-5xl font-semibold pb-10'>
@@ -537,13 +566,16 @@ const ItemWinter = () => {
             </div>
 
              {/* modal */}
-             <div>
+            <div>
             <dialog id="my_modal_1" className="modal">
                 <div className="modal-box">
                     <h3 className="font-bold text-lg">Checkout</h3>
-                    <p className="py-4">Press ESC key or click the button below to close</p>
+                    <p className="py-4">Press ESC key to close</p>
                     <div className="modal-action">
-                    <form method="dialog" className='flex flex-col w-full gap-3'>
+                    <form 
+                    onSubmit={handleOrder}
+                    method="dialog" 
+                    className='flex flex-col w-full gap-3'>
                         <input type="text" name="user_name" placeholder='Name' className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
                         <input type="email" name="user_email" placeholder='Email' className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
                         <textarea type="text" name="location" placeholder='Your Address' className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black textarea textarea-bordered textarea-2xl w-full'></textarea>
@@ -572,11 +604,11 @@ const ItemWinter = () => {
                             <option value="Leggings Items">Leggings Items</option>
                             <option value="Jeans">Jeans</option>
                         </select>
-                        <input type="number" name="user_email" placeholder='Quantity (min 100)' min={100} className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
-                        <input type="number" name="user_email" placeholder='Sample Quantity (min 50 -100)' min={50} className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
+                        <input type="number" name="quantity" placeholder='Quantity (min 100)' min={100} className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
+                        <input type="number" name="samplequantity" placeholder='Sample Quantity (min 50 -100)' min={50} className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
                         
-                        <button className="btn btn-primary">Submit</button>
-                        <button className="btn">Close</button>
+                        <button type='submit' name='submit' className="btn btn-primary">Submit</button>
+                        
                     </form>
                     </div>
                 </div>
