@@ -38,6 +38,7 @@ import quality2 from '../Images/quality2.png';
 import bulk from '../Images/bulk.png';
 import confirm from '../Images/confirm.png';
 import whitearrow from '../Images/whitearrow.png';
+import swim from '../ItemsImage/menswim5.jpg';
 import { Link } from 'react-router-dom';
 
 const Landingpage = () => {
@@ -391,6 +392,10 @@ const Landingpage = () => {
                 <Link to="/Jeans" className='relative'>
                     <img src={jeans} alt="" />
                     <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Jeans</h1>
+                </Link>
+                <Link to="/swimwear" className='relative'>
+                    <img src={swim} alt="" />
+                    <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Swimwear</h1>
                 </Link>
             </div>
             </section>

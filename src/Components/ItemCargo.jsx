@@ -37,6 +37,7 @@ import mentrouser1 from '../ItemsImage/mentrouser1.jpg';
 import mentshirt1 from '../ItemsImage/mentshirt1.jpg';
 import menwinter1 from '../ItemsImage/menwinter1.jpeg';
 import menjeans1 from '../ItemsImage/menjeans1.png';
+import menswim3 from '../ItemsImage/menswim3.jpg';
 import { Link } from 'react-router-dom';
 
 const ItemCargo = () => {
@@ -467,7 +468,7 @@ const ItemCargo = () => {
             <div className='w-full text-center text-3xl font-semibold  opacity-70 mt-20 border-none'>
                 <button className='hover:underline'> View More From</button>
             </div>
-            <div className='mt-10 grid grid-cols-2 md:grid-cols-5 gap-10 px-5 md:px-24'> 
+            <div className='mt-10 grid grid-cols-2 md:grid-cols-6 gap-10 px-5 md:px-24'> 
                 <Link to="/Shirt" className='relative w-40 h-40 rounded-full'>
                     <img src={menshirt1} className='w-full h-full object-cover object-center rounded-full' />
                     <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
@@ -527,6 +528,11 @@ const ItemCargo = () => {
                     <img src={menleggings1} className='w-full h-full object-cover object-center rounded-full' />
                     <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
                     <h1 className="absolute text-white text-center text-2xl font-bold bottom-14 left-5">Leggings</h1>
+                </Link>
+                <Link to="/swimwear" className='relative w-40 h-40 rounded-full'>
+                    <img src={menswim3} className='w-full h-full object-cover object-center rounded-full' />
+                    <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
+                    <h1 className="absolute text-white text-center text-2xl font-bold bottom-14 left-4">Swimwear</h1>
                 </Link>
             </div>
 

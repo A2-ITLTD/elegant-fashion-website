@@ -46,6 +46,10 @@ import menjeans2 from '../Images/menjeans2.jpeg';
 import womenjeans2 from '../Images/womenjeans2.jpeg';
 import kidsjeans2 from '../Images/kidsjeans.jpg';
 import kidsjeanspants from '../Images/kidsjeanspants.jpg';
+import menswim1 from '../ItemsImage/menswim2.jpg';
+import womenswim1 from '../ItemsImage/womenswim1.jpg';
+import kidswim1 from '../ItemsImage/kidswim2.jpg';
+import swim from '../ItemsImage/menswim4.jpg';
 const Products = () => {
     return (
         <div className="mt-16 px-5 md:px-14 lg:px-24">
@@ -388,6 +392,36 @@ const Products = () => {
                         </div>
                         <div className="relative w-3/5 h-auto flex items-center justify-center rounded-r-3xl">
                             <img src={jeans} alt="" className="h-full w-full object-cover object-center rounded-r-3xl" />
+                            <img src={heart} className='absolute top-5 right-5 w-7 transform transition-transform duration-300 hover:scale-125' />
+                        </div>
+                    </div>
+                </Link>
+
+                {/* 10th col */}
+                <Link to="/swimwear" className="w-full md:w-1/2">
+                    <div className='text-center text-3xl font-bold py-4'>
+                        <h1>Swimwear</h1>
+                    </div>
+                    <div className='shadow-3xl h-[450px] flex gap-2 rounded-3xl'>
+                        <div className="w-2/5 h-auto grid grid-rows-3 ">
+                            <Link className="relative h-full flex items-center justify-center rounded-tl-3xl">
+                            <img src={menswim1} alt="" className="h-full w-full object-cover rounded-tl-3xl" />
+                            <div className="absolute inset-0 bg-black opacity-50 rounded-tl-3xl hover:opacity-80"></div>
+                            <h1 className="absolute text-white text-center text-3xl font-bold py-2">Men</h1>
+                            </Link>
+                            <Link className="relative h-full flex items-center justify-center">
+                            <img src={womenswim1} alt="" className="h-full w-full object-cover" />
+                            <div className="absolute inset-0 bg-black opacity-50 hover:opacity-80"></div>
+                            <h1 className="absolute text-white text-center text-3xl font-bold py-2">Women</h1>
+                            </Link>
+                            <Link className="relative h-full flex items-center justify-center rounded-bl-3xl">
+                            <img src={kidswim1} alt="" className="h-full w-full object-cover rounded-bl-3xl" />
+                            <div className="absolute inset-0 bg-black opacity-50 rounded-bl-3xl hover:opacity-80"></div>
+                            <h1 className="absolute text-white text-center text-3xl font-bold py-2">Kids</h1>
+                            </Link>
+                        </div>
+                        <div className="relative w-3/5 h-auto flex items-center justify-center rounded-r-3xl">
+                            <img src={swim} alt="" className="h-full w-full object-cover object-center rounded-r-3xl" />
                             <img src={heart} className='absolute top-5 right-5 w-7 transform transition-transform duration-300 hover:scale-125' />
                         </div>
                     </div>

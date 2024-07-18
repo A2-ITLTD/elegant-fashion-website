@@ -24,6 +24,7 @@ import ItemCargo from './Components/ItemCargo.jsx';
 import ItemLeggings from './Components/ItemLeggings.jsx';
 import ItemJeans from './Components/ItemJeans.jsx';
 import Policy from './Components/Policy.jsx';
+import ItemSwimwear from './Components/ItemSwimwear.jsx';
 const router = createBrowserRouter([ 
  { 
  path: "/", 
@@ -92,6 +93,10 @@ const router = createBrowserRouter([
   {
     path: "/Jeans",
     element: <ItemJeans></ItemJeans>,
+  },
+  {
+    path: "/swimwear",
+    element: <ItemSwimwear></ItemSwimwear>,
   },
 
   ]
