@@ -25,6 +25,10 @@ import ItemLeggings from './Components/ItemLeggings.jsx';
 import ItemJeans from './Components/ItemJeans.jsx';
 import Policy from './Components/Policy.jsx';
 import ItemSwimwear from './Components/ItemSwimwear.jsx';
+import Profile from './Components/Profile.jsx';
+import ProfileAbout from './Components/ProfileAbout.jsx';
+import ProfileBrands from './Components/ProfileBrands.jsx';
+import ProfileDiscover from './Components/ProfileDiscover.jsx';
 const router = createBrowserRouter([ 
  { 
  path: "/", 
@@ -97,6 +101,22 @@ const router = createBrowserRouter([
   {
     path: "/swimwear",
     element: <ItemSwimwear></ItemSwimwear>,
+  },
+  {
+    path: "/Profile",
+    element: <Profile></Profile>,
+  },
+  {
+    path: "/profileabout",
+    element: <ProfileAbout></ProfileAbout>,
+  },
+  {
+    path: "/profilebrands",
+    element: <ProfileBrands></ProfileBrands>,
+  },
+  {
+    path: "/profilediscover",
+    element: <ProfileDiscover></ProfileDiscover>,
   },
 
   ]

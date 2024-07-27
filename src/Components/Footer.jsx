@@ -69,7 +69,7 @@ const Footer = () => {
                     <p className='font-light opacity-80'>Email: info@elegantfashionasia.com</p>
                     <p className='font-light opacity-80'>Phone: +880 1305 785 685</p>
                     <p className='font-light opacity-80'>Factory Address: 4-MOTIJHEEL COMMERCIAL AREA, <br /> SUITE # 29/A, LEVEL # 7, <br />Dhaka, Bangladesh                    </p>
-                    <p className='font-light opacity-80'>Trade License: TRAD/DNCC/001127/2024</p>
+                    <p className='font-light opacity-80'>Trade License: TRAD/DNCC/000454/2024</p>
                 </div>
                 <div className='text-sm flex flex-col gap-2 '>
                     <h1 className='font-medium'>INFORMATION</h1>
