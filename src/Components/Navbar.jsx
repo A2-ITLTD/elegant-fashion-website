@@ -49,7 +49,6 @@ const Navbar = () => {
                         </Link>
                         <Link to="/About" className="hover:underline">About Us</Link>
                         <Link to="/Profile"  className="hover:underline ">Profile</Link>
-                        <Link to="/Policy" className="hover:underline">Privacy & Policy</Link>
                         <Link to="/Contact" className="hover:underline">Contact Us</Link>
                     </ul>
                 </div>
