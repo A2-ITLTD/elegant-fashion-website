@@ -5,6 +5,7 @@ import instagram from '../Images/instagram.png';
 import youtube from '../Images/youtube.png';
 import alibaba from '../Images/alibaba_logo.png';
 import whatsapp from '../Images/whatsapp.png';
+import pinterest from '../Images/pinterest.png';
 import logo from '../Images/elegant-logo-removebg.png'
 import {ToastContainer , toast } from 'react-toastify';
 import { Link } from "react-router-dom";
@@ -63,6 +64,7 @@ const Footer = () => {
                         <img src={instagram} alt="" className='w-10'/>
                         <img src={alibaba} alt="" className='w-10'/>
                         <img src={youtube} alt="" className='w-10'/>
+                        <img src={pinterest} alt="" className='w-10'/>
                     </div>
                 </div>
                 <div className='text-sm flex flex-col gap-2 '>
