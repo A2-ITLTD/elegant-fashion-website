@@ -6,6 +6,8 @@ import youtube from '../Images/youtube.png';
 import alibaba from '../Images/alibaba_logo.png';
 import whatsapp from '../Images/whatsapp.png';
 import pinterest from '../Images/pinterest.png';
+import linkedin from '../Images/linkedin.png';
+import twitter from '../Images/twitter.png';
 import logo from '../Images/elegant-logo-removebg.png'
 import {ToastContainer , toast } from 'react-toastify';
 import { Link } from "react-router-dom";
@@ -61,10 +63,12 @@ const Footer = () => {
                         <a href="https://wa.me/+8801305785685?text=Hello how can I help you?" target="_blank">
                             <img src={whatsapp} alt="" className='w-10'/>
                         </a>
-                        <img src={instagram} alt="" className='w-10'/>
-                        <img src={alibaba} alt="" className='w-10'/>
-                        <img src={youtube} alt="" className='w-10'/>
-                        <img src={pinterest} alt="" className='w-10'/>
+                        <a href="https://www.instagram.com/elegentfashion9/"><img src={instagram} alt="" className='w-10'/></a>
+                        <a href="https://www.linkedin.com/in/elegent-fashion-079427322/"><img src={linkedin} alt="" className='w-10'/></a>
+                        <a href="https://x.com/FashionEle12341"><img src={twitter} alt="" className='w-10'/></a>
+                        <a href=""><img src={alibaba} alt="" className='w-10'/></a>
+                        <a href=""><img src={youtube} alt="" className='w-10'/></a>
+                        <a href=""><img src={pinterest} alt="" className='w-10'/></a>
                     </div>
                 </div>
                 <div className='text-sm flex flex-col gap-2 '>
