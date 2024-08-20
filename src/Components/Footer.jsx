@@ -68,7 +68,7 @@ const Footer = () => {
                         <a href="https://x.com/FashionEle12341"><img src={twitter} alt="" className='w-10'/></a>
                         <a href=""><img src={alibaba} alt="" className='w-10'/></a>
                         <a href=""><img src={youtube} alt="" className='w-10'/></a>
-                        <a href=""><img src={pinterest} alt="" className='w-10'/></a>
+                        <a href="https://www.pinterest.com/pinac0626/"><img src={pinterest} alt="" className='w-10'/></a>
                     </div>
                 </div>
                 <div className='text-sm flex flex-col gap-2 '>
