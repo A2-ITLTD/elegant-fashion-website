@@ -41,6 +41,25 @@ import menswim3 from '../ItemsImage/menswim3.jpg';
 import { Link } from 'react-router-dom';
 const ItemLeggings = () => {
 
+    const [loading, setLoading] = useState(true);
+    const [kidsitems, setKidsItem] = useState([]);
+
+    useEffect(() => {
+        setLoading(true);
+        fetch('kids.json')
+        .then(res => res.json())
+        .then(data => {
+            const filterdata = data.filter(item => item.category === "leggings"); 
+            setKidsItem(filterdata);
+        })
+
+        setLoading(false);
+    }, [setKidsItem]);
+
+    if (loading) {
+        return <span className="loading loading-dots loading-lg"></span>;
+    }
+
     const handleOrder = e => {
         e.preventDefault();
         const username = e.target.elements.user_name.value;
@@ -357,20 +376,14 @@ const ItemLeggings = () => {
 
                 {/* kids */}
                 <TabPanel>
-                <Carousel
-                    autoPlay
-                    interval={2000}
-                    infiniteLoop
-                    showThumbs={false}
-                    className='w-full'
-                    >
-                        {/* 1st slide */}
-                        <div className='grid grid-cols-1 md:grid-cols-2 lg:flex justify-items-center md:justify-evenly items-center gap-5'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center md:justify-evenly items-center gap-5'>
+                    {
+                        kidsitems.map(item => (
                             <div className='flex flex-col gap-6 p-5 w-96'>
-                                <img src={kidleggings1} alt="" />
+                                <img src={item.image} alt="" />
                                 <div className='flex justify-between'>
-                                    <h1>Orange Sweater</h1>
-                                    <h1 className='font-bold'>$100</h1>
+                                    <h1>{item.name}</h1>
+                                    <h1 className='font-bold'>{item.price}</h1>
                                 </div>
                                 <div className='flex justify-evenly text-xs'>
                                     <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>M</button>
@@ -385,111 +398,10 @@ const ItemLeggings = () => {
                                     className='bg-black text-white font-semibold w-full py-2'>Add to Cart</button>
                                 </div>
                             </div>
-                        {/* 2nd */}
-                        <div className='flex flex-col gap-6 p-5 w-96'>
-                                <img src={kidleggings2} alt="" />
-                                <div className='flex justify-between'>
-                                    <h1>Black Jacket</h1>
-                                    <h1 className='font-bold'>$100</h1>
-                                </div>
-                                <div className='flex justify-evenly text-xs'>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>M</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>L</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>XL</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>XXL</button>
-                                </div>
-                                <div className='flex gap-4 items-center'>
-                                    <IoHeartOutline className='text-4xl' />
-                                    <button 
-                                    onClick={()=>document.getElementById('my_modal_1').showModal()}
-                                    className='bg-black text-white font-semibold w-full py-2'>Add to Cart</button>
-                                </div>
-                            </div>
-                            {/* 3rd */}
-                            <div className='flex flex-col gap-6 p-5 w-96'>
-                                <img src={kidleggings3} alt="" />
-                                <div className='flex justify-between'>
-                                    <h1>White Cardigan</h1>
-                                    <h1 className='font-bold'>$100</h1>
-                                </div>
-                                <div className='flex justify-evenly text-xs'>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>M</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>L</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>XL</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>XXL</button>
-                                </div>
-                                <div className='flex gap-4 items-center'>
-                                    <IoHeartOutline className='text-4xl' />
-                                    <button 
-                                    onClick={()=>document.getElementById('my_modal_1').showModal()}
-                                    className='bg-black text-white font-semibold w-full py-2'>Add to Cart</button>
-                                </div>
-                            </div>
-            
-                        </div>
-                        {/* 2nd slide */}
-                        <div className='grid grid-cols-1 md:grid-cols-2 lg:flex  justify-items-center md:justify-evenly items-center gap-5'>
-                            <div className='flex flex-col gap-6 p-5 w-96'>
-                                <img src={kidleggings4} alt="" />
-                                <div className='flex justify-between'>
-                                    <h1>Black Jacket</h1>
-                                    <h1 className='font-bold'>$100</h1>
-                                </div>
-                                <div className='flex justify-evenly text-xs'>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>M</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>L</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>XL</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>XXL</button>
-                                </div>
-                                <div className='flex gap-4 items-center'>
-                                    <IoHeartOutline className='text-4xl' />
-                                    <button 
-                                    onClick={()=>document.getElementById('my_modal_1').showModal()}
-                                    className='bg-black text-white font-semibold w-full py-2'>Add to Cart</button>
-                                </div>
-                            </div>
-                        {/* 2nd */}
-                        <div className='flex flex-col gap-6 p-5 w-96'>
-                                <img src={kidleggings5} alt="" />
-                                <div className='flex justify-between'>
-                                    <h1>Green Sweater</h1>
-                                    <h1 className='font-bold'>$100</h1>
-                                </div>
-                                <div className='flex justify-evenly text-xs'>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>M</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>L</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>XL</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>XXL</button>
-                                </div>
-                                <div className='flex gap-4 items-center'>
-                                    <IoHeartOutline className='text-4xl' />
-                                    <button 
-                                    onClick={()=>document.getElementById('my_modal_1').showModal()}
-                                    className='bg-black text-white font-semibold w-full py-2'>Add to Cart</button>
-                                </div>
-                            </div>
-                            {/* 3rd */}
-                            <div className='flex flex-col gap-6 p-5 w-96'>
-                                <img src={kidleggings6} alt="" />
-                                <div className='flex justify-between'>
-                                    <h1>Black and Orange Sweater</h1>
-                                    <h1 className='font-bold'>$100</h1>
-                                </div>
-                                <div className='flex justify-evenly text-xs'>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>M</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>L</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>XL</button>
-                                    <button className='bg-slate-200 p-2 rounded-md hover:bg-slate-900 text-black font-medium hover:text-white'>XXL</button>
-                                </div>
-                                <div className='flex gap-4 items-center'>
-                                    <IoHeartOutline className='text-4xl' />
-                                    <button 
-                                    onClick={()=>document.getElementById('my_modal_1').showModal()}
-                                    className='bg-black text-white font-semibold w-full py-2'>Add to Cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </Carousel>    
+                        
+                        ))
+                    }  
+                    </div>     
                 </TabPanel>
             </Tabs>
             <div className='w-full text-center text-3xl font-semibold  opacity-70 mt-20 border-none'>

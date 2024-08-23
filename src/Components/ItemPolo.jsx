@@ -13,12 +13,7 @@ import menpolo4 from '../ItemsImage/menpolo4.jpg';
 import menpolo5 from '../ItemsImage/menpolo5.jpg';
 import menpolo6 from '../ItemsImage/menpolo6.jpg';
 
-import womenpolo1 from '../ItemsImage/womenpolo1.jpg';
-import womenpolo2 from '../ItemsImage/womenpolo2.jpg';
-import womenpolo3 from '../ItemsImage/womenpolo3.jpg';
-import womenpolo4 from '../ItemsImage/womenpolo4.jpg';
-import womenpolo5 from '../ItemsImage/womenpolo5.jpg';
-import womenpolo6 from '../ItemsImage/womenpolo6.jpg';
+
 
 import kidpolo1 from '../ItemsImage/kidpolo1.jpg';
 import kidpolo2 from '../ItemsImage/kidpolo2.jpg';
