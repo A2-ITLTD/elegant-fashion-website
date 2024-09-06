@@ -29,6 +29,7 @@ import Profile from './Components/Profile.jsx';
 import ProfileAbout from './Components/ProfileAbout.jsx';
 import ProfileBrands from './Components/ProfileBrands.jsx';
 import ProfileDiscover from './Components/ProfileDiscover.jsx';
+import ItemCoat from './Components/ItemCoat.jsx';
 const router = createBrowserRouter([ 
  { 
  path: "/", 
@@ -117,6 +118,11 @@ const router = createBrowserRouter([
   {
     path: "/profilediscover",
     element: <ProfileDiscover></ProfileDiscover>,
+  },
+
+  {
+    path: "/coat",
+    element: <ItemCoat></ItemCoat>,
   },
 
   ]

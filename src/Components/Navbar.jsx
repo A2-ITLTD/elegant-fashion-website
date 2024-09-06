@@ -43,6 +43,7 @@ const Navbar = () => {
                             <Link to="/Leggings" className="hover:underline"><a>Leggins Items</a></Link>
                             <Link to="/Jeans" className="hover:underline"><a>Jeans</a></Link>
                             <Link to="/swimwear" className="hover:underline"><a>Swimwear</a></Link>
+                            <Link to="/coat" className="hover:underline"><a>Coat</a></Link>
                         </ul>
                         </div>
 
