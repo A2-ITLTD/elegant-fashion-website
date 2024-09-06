@@ -86,7 +86,7 @@ const ItemCoat = () => {
     return (
         <div className="mt-14 px-5 md:px-10 lg:px-24" >
            <div className='text-center text-5xl font-semibold pb-10'>
-                <h1>Leggings Items</h1>
+                <h1>Coat Items</h1>
             </div>
             <Tabs>
                 <TabList className="flex flex-col md:flex-row justify-center text-current gap-4 pb-10">
