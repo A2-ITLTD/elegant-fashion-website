@@ -6,13 +6,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { IoHeartOutline } from "react-icons/io5";
 
 
-import menjeans1 from '../ItemsImage/menjeans1.png';
-import menjeans2 from '../ItemsImage/menjeans2.png';
-import menjeans3 from '../ItemsImage/menjeans3.png';
-import menjeans4 from '../ItemsImage/menjeans4.jpg';
-import menjeans5 from '../ItemsImage/menjeans5.jpg';
-import menjeans6 from '../ItemsImage/menjeans6.jpg';
 
+import coat from '../Images/coat.jpg';
 import menshirt1 from '../ItemsImage/menshirt1.jpg';
 import mencargo1 from '../ItemsImage/mencargo1.jpg';
 import mendenim1 from '../ItemsImage/mendenim1.jpg';
@@ -209,6 +204,12 @@ const ItemJeans = () => {
                     <img src={mentshirt1} className='w-full h-full object-cover object-center rounded-full' />
                     <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
                     <h1 className="absolute text-white text-center text-3xl font-bold bottom-14 left-6">T-Shirt</h1>
+                </Link>
+
+                <Link to="/coat"  className='relative w-40 h-40 rounded-full'>
+                    <img src={coat} className='w-full h-full object-cover object-center rounded-full' />
+                    <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
+                    <h1 className="absolute text-white text-center text-3xl font-bold bottom-14 left-8">Coats</h1>
                 </Link>
 
                 <Link to="/swimwear" className='relative w-40 h-40 rounded-full'>

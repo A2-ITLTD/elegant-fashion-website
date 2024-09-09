@@ -10,6 +10,7 @@ import orangebg from '../Images/orangebg.jpg';
 import check from '../Images/checked.png';
 import supply from '../Images/supply.png';
 import hand from '../Images/hand.png';
+import coat from '../Images/coat.jpg';
 import staff from '../Images/staff.png';
 import tshirt1 from '../Images/tshirt1.jpg';
 import tshirt2 from '../Images/tshirt2.jpg';
@@ -407,6 +408,10 @@ const Landingpage = () => {
                 <Link to="/swimwear" className='relative'>
                     <img src={swim} alt="" />
                     <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Swimwear</h1>
+                </Link>
+                <Link to="/swimwear" className='relative'>
+                    <img src={coat} alt="" />
+                    <h1 className='absolute bottom-0 w-full bg-[#000000a6] text-white font-semibold py-2 lg:py-3 text-base md:text-base lg:text-lg text-center'>Coats</h1>
                 </Link>
             </div>
             </section>

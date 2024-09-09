@@ -5,7 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { IoHeartOutline } from "react-icons/io5";
 
-
+import coat from '../Images/coat.jpg';
 import mentrouser1 from '../ItemsImage/mentrouser1.jpg';
 import menshorts1 from '../ItemsImage/menshorts1.jpg';
 import menshirt1 from '../ItemsImage/menshirt1.jpg';
@@ -204,6 +204,12 @@ const ItemTshirt = () => {
                     <img src={menleggings1} className='w-full h-full object-cover object-center rounded-full' />
                     <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
                     <h1 className="absolute text-white text-center text-2xl font-bold bottom-10 left-6">Leggings <br /> Pants</h1>
+                </Link>
+
+                <Link to="/coat"  className='relative w-40 h-40 rounded-full'>
+                    <img src={coat} className='w-full h-full object-cover object-center rounded-full' />
+                    <div className="absolute inset-0 rounded-full bg-black opacity-50 hover:opacity-80"></div>
+                    <h1 className="absolute text-white text-center text-3xl font-bold bottom-14 left-8">Coats</h1>
                 </Link>
 
                 <Link to="/swimwear"  className='relative w-40 h-40 rounded-full'>
