@@ -262,53 +262,58 @@ const ItemCargo = () => {
 
             {/* modal */}
             <div>
-            <dialog id="my_modal_1" className="modal">
-                <div className="modal-box">
-                    <h3 className="font-bold text-lg">Checkout</h3>
-                    <p className="py-4">Press ESC key to close</p>
-                    <div className="modal-action">
-                    <form 
-                    onSubmit={handleOrder}
-                    method="dialog" 
-                    className='flex flex-col w-full gap-3'>
-                        <input type="text" name="user_name" placeholder='Name' className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
-                        <input type="email" name="user_email" placeholder='Email' className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
-                        <textarea type="text" name="location" placeholder='Your Address' className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black textarea textarea-bordered textarea-2xl w-full'></textarea>
-                        <input 
-                            type="tel"  
-                            name="user_phone"  
-                            placeholder="Whatsapp Number" 
-                            className="py-2 px-5 border-[1px] border-black rounded-md text-base text-black" 
-                            onKeyPress={(e) => {
-                                if (!/[0-9]/.test(e.key)) {
-                                e.preventDefault();
-                                }
-                            }}
-                        />
-                        <select name="Items" id="" className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black textarea textarea-bordered textarea-2xl w-full'>
-                            <option value="">Select Items</option>
-                            <option value="Shirt">Shirt</option>
-                            <option value="T-Shirt">T-Shirt</option>
-                            <option value="Polo Shirt">Polo Shirt</option>
-                            <option value="Winter Wear">Winter Wear</option>
-                            <option value="Hoodies and Sweatshirt">Hoodies and Sweatshirt</option>
-                            <option value="Denim Pant">Denim Pant</option>
-                            <option value="Shorts">Shorts</option>
-                            <option value="Trouser">Traouser</option>
-                            <option value="Cargo">Cargo</option>
-                            <option value="Leggings Items">Leggings Items</option>
-                            <option value="Jeans">Jeans</option>
-                        </select>
-                        <input type="number" name="quantity" placeholder='Quantity (min 100)' min={100} className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
-                        <input type="number" name="samplequantity" placeholder='Sample Quantity (min 50 -100)' min={50} className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
-                        
-                        <button type='submit' name='submit' className="btn btn-primary">Submit</button>
-                        
-                    </form>
+                <dialog id="my_modal_1" className="modal">
+                    <div className="modal-box">
+                        {/* <button 
+                            className="btn my-2 py-4" 
+                            formMethod="dialog">
+                            Close
+                        </button> */}
+                        <h3 className="font-bold text-lg">Checkout</h3>
+                        <div className="modal-action">
+                            <form 
+                                onSubmit={handleOrder}
+                                method="dialog" 
+                                className='flex flex-col w-full gap-3'>
+                                <input type="text" name="user_name" placeholder='Name' className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
+                                <input type="email" name="user_email" placeholder='Email' className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
+                                <textarea type="text" name="location" placeholder='Your Address' className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black textarea textarea-bordered textarea-2xl w-full'></textarea>
+                                <input 
+                                    type="tel"  
+                                    name="user_phone"  
+                                    placeholder="Whatsapp Number" 
+                                    className="py-2 px-5 border-[1px] border-black rounded-md text-base text-black" 
+                                    onKeyPress={(e) => {
+                                        if (!/[0-9]/.test(e.key)) {
+                                        e.preventDefault();
+                                        }
+                                    }}
+                                />
+                                <select name="Items" id="" className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black textarea textarea-bordered textarea-2xl w-full'>
+                                    <option value="">Select Items</option>
+                                    <option value="Shirt">Shirt</option>
+                                    <option value="T-Shirt">T-Shirt</option>
+                                    <option value="Polo Shirt">Polo Shirt</option>
+                                    <option value="Winter Wear">Winter Wear</option>
+                                    <option value="Hoodies and Sweatshirt">Hoodies and Sweatshirt</option>
+                                    <option value="Denim Pant">Denim Pant</option>
+                                    <option value="Shorts">Shorts</option>
+                                    <option value="Trouser">Trouser</option>
+                                    <option value="Cargo">Cargo</option>
+                                    <option value="Leggings Items">Leggings Items</option>
+                                    <option value="Jeans">Jeans</option>
+                                </select>
+                                <input type="number" name="quantity" placeholder='Quantity (min 100)' min={100} className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
+                                <input type="number" name="samplequantity" placeholder='Sample Quantity (min 50 -100)' min={50} className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
+                                
+                                <button type='submit' name='submit' className="btn btn-primary">Submit</button>
+                                <button type="button" className="btn" onClick={() => document.getElementById('my_modal_1').close()}>Close</button>
+                            </form>
+                        </div>
                     </div>
-                </div>
                 </dialog>
             </div>
+
         </div>
     );
 };

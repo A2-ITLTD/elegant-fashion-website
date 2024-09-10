@@ -261,7 +261,6 @@ const ItemCoat = () => {
             <dialog id="my_modal_1" className="modal">
                 <div className="modal-box">
                     <h3 className="font-bold text-lg">Checkout</h3>
-                    <p className="py-4">Press ESC key to close</p>
                     <div className="modal-action">
                     <form 
                     onSubmit={handleOrder}
@@ -299,7 +298,7 @@ const ItemCoat = () => {
                         <input type="number" name="samplequantity" placeholder='Sample Quantity (min 50 -100)' min={50} className='py-2 px-5 border-[1px] border-black rounded-md text-base text-black' />
                         
                         <button type='submit' name='submit' className="btn btn-primary">Submit</button>
-                        
+                        <button type="button" className="btn" onClick={() => document.getElementById('my_modal_1').close()}>Close</button>
                     </form>
                     </div>
                 </div>
