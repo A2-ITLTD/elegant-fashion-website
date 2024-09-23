@@ -67,7 +67,7 @@ const Footer = () => {
                         <a href="https://www.linkedin.com/in/elegent-fashion-079427322/"><img src={linkedin} alt="" className='w-10'/></a>
                         <a href="https://x.com/FashionEle12341"><img src={twitter} alt="" className='w-10'/></a>
                         <a href=""><img src={alibaba} alt="" className='w-10'/></a>
-                        <a href=""><img src={youtube} alt="" className='w-10'/></a>
+                        <a href="https://studio.youtube.com/channel/UC1PXrknkSapuO6EG_OHlFhg"><img src={youtube} alt="" className='w-10'/></a>
                         <a href="https://www.pinterest.com/pinac0626/"><img src={pinterest} alt="" className='w-10'/></a>
                     </div>
                 </div>
